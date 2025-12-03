@@ -6,8 +6,13 @@ function SideMenu() {
         <aside
             className="main-sidebar elevation-4"
             style={{
-                backgroundColor: "#f8d7e3",           // Fondo rosado pastel
-                borderRight: "3px solid #f3b9cc"
+                backgroundColor: "#f8d7e3",
+                borderRight: "3px solid #f3b9cc",
+                height: "100vh",              // Altura completa de la ventana
+                position: "fixed",            // Fijo en la pantalla
+                top: 0,
+                left: 0,
+                overflowY: "auto"            // Scroll si el contenido es muy largo
             }}
         >
 
@@ -23,7 +28,7 @@ function SideMenu() {
                 }}
             >
                 <img
-                    src="/img/pasteleria-logo.png"
+                    src="/img/logoprincipal.jpeg"
                     alt="Logo"
                     className="brand-image img-circle elevation-3"
                     style={{ opacity: "1", border: "2px solid #fff5f8" }}
@@ -72,7 +77,7 @@ function SideMenu() {
                         className="input-group"
                         data-widget="sidebar-search"
                         style={{
-                            backgroundColor: "#fcecf1",
+                            backgroundColor: "#fff5f8",
                             borderRadius: "8px",
                             border: "1px solid #f3b9cc"
                         }}
